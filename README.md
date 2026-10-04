@@ -11,5 +11,10 @@ Drawing with voice. Open `index.html` in a browser and it shows a blank canvas t
   - `{"px": [[x, y, "#e0763c"], ...], "d": 30}` colors pixels one by one (`d` = ms between pixels; a null color erases)
   - `{"p": [[x, y], ...], "c": "#1f1b17", "w": 4}` draws a hand-drawn stroke in a 1000 x 1000 space
   - `{"say": "text"}` shows a caption, `{"clear": true}` wipes the canvas
+  - `{"new": "Sunday, October 4, 12:20 PM"}` starts a fresh canvas with that title (leave it empty for an automatic date and time)
+
+## Canvas history
+
+The left sidebar lists every canvas, newest first, like a chat history. Click a title to see that drawing on the right; "Back to live canvas" returns to the one Fo is drawing on. "+ New canvas" starts a fresh one. Canvases are kept in your browser, and `history.json` in this repo seeds the saved ones so they show up on any device.
 
 Built by Sanskriti Bhatnagar with Fo, her Wajo AI assistant.
